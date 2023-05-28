@@ -1,0 +1,1 @@
+"C:\Program Files\Microsoft Visual Studio\2022\Community\dotnet\runtime\dotnet.exe" msbuild Linuxide.sln -t:rebuild -property:Configuration=Debug
