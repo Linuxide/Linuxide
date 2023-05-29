@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace Linuxide
 {
 
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         public int currentPageNum;
 
@@ -19,12 +19,7 @@ namespace Linuxide
         Preperation preperation = new Preperation();
         PartitionManager partitionManager = new PartitionManager();
 
-
-
-
-
-
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
 
@@ -74,7 +69,7 @@ namespace Linuxide
             { // if it is the last page, close the app
                 button1.Enabled = false; // who the fuck wants next->finish->next here? An endless next/finish?
                 Application.Exit();
-                return; //debuger == hungry
+                return; //debugger == hungry
             }
 
             if (currentPageNum == 1) //ill-fat code. too lazy for switches
@@ -87,6 +82,7 @@ namespace Linuxide
             }
             if (currentPageNum == 2) //ill-fat code. too lazy for switches
             {
+                button3.Enabled = false;
                 panel1.Controls.Remove(preperation);
                 partitionManager.TopLevel = false;
                 panel1.Controls.Add(partitionManager);
@@ -121,6 +117,15 @@ namespace Linuxide
                 welcome.TopLevel = false;
                 panel1.Controls.Add(welcome);
                 welcome.Show();
+                return;
+            }
+            if (currentPageNum == 1) //ill-fat code. too lazy for switches
+            {
+                button3.Enabled = true;
+                panel1.Controls.Remove(partitionManager);
+                partitionManager.TopLevel = false;
+                panel1.Controls.Add(preperation);
+                preperation.Show();
                 return;
             }
         }

@@ -10,7 +10,7 @@ namespace Linuxide
     {
         public string fileName = string.Empty;
 
-        public Form1 parentForm;
+        public MainWindow parentForm;
         public Preperation()
         {
             InitializeComponent();

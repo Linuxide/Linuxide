@@ -46,7 +46,7 @@ namespace Linuxide
                 Console.WriteLine("Partition nums all: {0}", Fullpart[partcount]);
 
             }
-            warningPanel.Enabled = false;
+            warningPanel.Visible = false;
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
