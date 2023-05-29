@@ -57,7 +57,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Linuxide.Properties.Resources.logo_original2;
+            this.pictureBox1.Image = global::Linuxide.Properties.Resources.logo_original;
             this.pictureBox1.Location = new System.Drawing.Point(13, 23);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 68);
