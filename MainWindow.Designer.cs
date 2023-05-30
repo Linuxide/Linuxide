@@ -35,7 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.LinuxideNotifier = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -84,11 +84,11 @@
             this.panel1.Size = new System.Drawing.Size(602, 379);
             this.panel1.TabIndex = 4;
             // 
-            // notifyIcon1
+            // LinuxideNotifier
             // 
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "Linuxide - Dummy Text";
-            this.notifyIcon1.Visible = true;
+            this.LinuxideNotifier.Icon = ((System.Drawing.Icon)(resources.GetObject("LinuxideNotifier.Icon")));
+            this.LinuxideNotifier.Text = "Linuxide - Dummy Text";
+            this.LinuxideNotifier.Visible = true;
             // 
             // MainWindow
             // 
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.NotifyIcon LinuxideNotifier;
     }
 }
 
