@@ -168,15 +168,10 @@
     <None Include="Resources\logo_original.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DiskPartWrapper\DiskPartWrapper.csproj">
-      <Project>{fa36cbc4-702a-4e7c-9288-88284cb0a23f}</Project>
-      <Name>DiskPartWrapper</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\warningIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bg_img.png" />
     <Content Include="Tux.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -192,16 +187,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="DiskPartWrapper">
-      <Visible>False</Visible>
-      <Group>
-      </Group>
-      <TargetPath>
-      </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
-      <FileType>Assembly</FileType>
-    </PublishFile>
+    <ProjectReference Include="..\DiskPartWrapper\DiskPartWrapper.csproj">
+      <Project>{fa36cbc4-702a-4e7c-9288-88284cb0a23f}</Project>
+      <Name>DiskPartWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistroDL\DistroDL.csproj">
+      <Project>{116f209c-dc11-43a8-8248-5f6a7e4b5cf3}</Project>
+      <Name>DistroDL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

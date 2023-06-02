@@ -63,6 +63,16 @@ namespace Linuxide.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg_img {
+            get {
+                object obj = ResourceManager.GetObject("bg_img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_original {
             get {
                 object obj = ResourceManager.GetObject("logo_original", resourceCulture);

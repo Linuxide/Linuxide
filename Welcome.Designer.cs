@@ -48,15 +48,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 48);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(83, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 30);
+            this.label1.Size = new System.Drawing.Size(296, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome to Linuxide!";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Linuxide.Properties.Resources.logo_original;
             this.pictureBox1.Location = new System.Drawing.Point(13, 23);
             this.pictureBox1.Name = "pictureBox1";
@@ -69,11 +72,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img;
             this.ClientSize = new System.Drawing.Size(621, 474);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.Name = "Welcome";
             this.Text = "Welcome";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
