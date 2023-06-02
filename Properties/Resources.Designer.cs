@@ -63,9 +63,49 @@ namespace Linuxide.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo_original {
+        internal static System.Drawing.Bitmap bg_img {
+            get {
+                object obj = ResourceManager.GetObject("bg_img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_img1 {
+            get {
+                object obj = ResourceManager.GetObject("bg_img1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_orginal {
+            get {
+                object obj = ResourceManager.GetObject("icon_orginal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_rounded {
             get {
                 object obj = ResourceManager.GetObject("icon_rounded", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_rounded1 {
+            get {
+                object obj = ResourceManager.GetObject("icon_rounded1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +116,16 @@ namespace Linuxide.Properties {
         internal static System.Drawing.Bitmap warningIcon {
             get {
                 object obj = ResourceManager.GetObject("warningIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcome_expl {
+            get {
+                object obj = ResourceManager.GetObject("welcome_expl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

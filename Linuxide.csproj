@@ -160,7 +160,7 @@
     <None Include="Resources\warningIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tux.ico" />
+    <None Include="Resources\bg_img.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -190,9 +190,20 @@
     <Content Include="Resources\icon_orginal.png" />
     <Content Include="Resources\icon_rounded.ico" />
     <Content Include="Resources\icon_rounded.png" />
+    <None Include="Resources\welcome_expl.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DiskPartWrapper\DiskPartWrapper.csproj">
+      <Project>{fa36cbc4-702a-4e7c-9288-88284cb0a23f}</Project>
+      <Name>DiskPartWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistroDL\DistroDL.csproj">
+      <Project>{116f209c-dc11-43a8-8248-5f6a7e4b5cf3}</Project>
+      <Name>DistroDL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -39,28 +39,34 @@
             this.button2 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(13, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 30);
+            this.label1.Size = new System.Drawing.Size(261, 37);
             this.label1.TabIndex = 3;
             this.label1.Text = "Load a distribution";
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 146);
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton1.Location = new System.Drawing.Point(12, 155);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(189, 17);
+            this.radioButton1.Size = new System.Drawing.Size(223, 17);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Already downloaded a distribution?";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // openFileDialog1
@@ -70,13 +76,16 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(12, 286);
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButton2.Location = new System.Drawing.Point(12, 266);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(158, 17);
+            this.radioButton2.Size = new System.Drawing.Size(185, 17);
             this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Download a distribution now";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // button1
@@ -100,6 +109,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(17, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 13);
@@ -115,7 +126,7 @@
             this.domainUpDown1.Items.Add("Ubuntu MATE (latest)");
             this.domainUpDown1.Items.Add("Pop_OS! (latest)");
             this.domainUpDown1.Items.Add("Arch Linux (latest)");
-            this.domainUpDown1.Location = new System.Drawing.Point(161, 342);
+            this.domainUpDown1.Location = new System.Drawing.Point(12, 295);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.ReadOnly = true;
             this.domainUpDown1.Size = new System.Drawing.Size(241, 20);
@@ -125,9 +136,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(414, 343);
+            this.button2.Location = new System.Drawing.Point(259, 294);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 19);
+            this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 10;
             this.button2.Text = "Download";
             this.button2.UseVisualStyleBackColor = true;
@@ -135,7 +146,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(41, 406);
+            this.progressBar1.Location = new System.Drawing.Point(12, 321);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(517, 23);
             this.progressBar1.TabIndex = 11;
@@ -143,17 +154,31 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(293, 93);
+            this.listBox1.Location = new System.Drawing.Point(396, 63);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(196, 95);
             this.listBox1.TabIndex = 12;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label3.Location = new System.Drawing.Point(393, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "SELECT PARTITION";
+            // 
             // Preperation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img1;
             this.ClientSize = new System.Drawing.Size(621, 474);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button2);
@@ -186,5 +211,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
