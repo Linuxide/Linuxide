@@ -37,6 +37,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Silver;
             this.textBox1.Location = new System.Drawing.Point(12, 98);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
