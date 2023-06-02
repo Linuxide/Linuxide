@@ -10,11 +10,13 @@ namespace Linuxide
         /// </summary>
         [STAThread]
 
-        static int Updater() //not completed, and i don't think it will ever be
+       /* static int Updater() //not completed, and i don't think it will ever be
         {
             //Application.Run(new Updater());
             return 0;
-        }
+        } 
+        */
+        
         static void Main()
         {
             Application.EnableVisualStyles();

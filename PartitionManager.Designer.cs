@@ -67,7 +67,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Linuxide.Properties.Resources.warningIcon1;
+            this.pictureBox1.Image = global::Linuxide.Properties.Resources.warningIcon;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;

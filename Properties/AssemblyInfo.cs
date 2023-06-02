@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Linuxide")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Let's pretend that it is a Linux installer")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ChocolateAdventurouz")]
 [assembly: AssemblyProduct("Linuxide")]

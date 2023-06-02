@@ -12,10 +12,10 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\releases\Linuxide\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ChocolateAdventurouz\releases\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
+    <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -23,12 +23,11 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://github.com/ChocolateAdventurouz/Linuxide/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/ChocolateAdventurouz/Linuxide/master/version.txt/</UpdateUrl>
     <MinimumRequiredVersion>1.0.0.21</MinimumRequiredVersion>
-    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>23</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>27</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -61,7 +60,8 @@
     <StartupObject>Linuxide.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Tux.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>FD06B638F9A1481D207218632D489515C304A62D</ManifestCertificateThumbprint>
@@ -93,6 +93,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Managers\CoreManager.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,12 +119,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Updater.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Updater.Designer.cs">
-      <DependentUpon>Updater.cs</DependentUpon>
-    </Compile>
     <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,9 +139,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Updater.resx">
-      <DependentUpon>Updater.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,16 +154,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo_original.png" />
+    <None Include="Properties\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\warningIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bg_img.png" />
     <Content Include="Tux.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -187,14 +175,24 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DiskPartWrapper\DiskPartWrapper.csproj">
-      <Project>{fa36cbc4-702a-4e7c-9288-88284cb0a23f}</Project>
-      <Name>DiskPartWrapper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DistroDL\DistroDL.csproj">
-      <Project>{116f209c-dc11-43a8-8248-5f6a7e4b5cf3}</Project>
-      <Name>DistroDL</Name>
-    </ProjectReference>
+    <PublishFile Include="DiskPartWrapper">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon_orginal.png" />
+    <Content Include="Resources\icon_rounded.ico" />
+    <Content Include="Resources\icon_rounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -5,12 +5,12 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linuxide", "Linuxide.csproj", "{7C5618D2-0DBD-4081-B1F0-FC13AA570EFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskPartWrapper", "..\DiskPartWrapper\DiskPartWrapper.csproj", "{FA36CBC4-702A-4E7C-9288-88284CB0A23F}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A3BA59C-9B66-47B9-85AF-A71051330C37}"
 	ProjectSection(SolutionItems) = preProject
 		Linuxide_TemporaryKey.pfx = Linuxide_TemporaryKey.pfx
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiskPartWrapper", "..\DiskPartWrapper\DiskPartWrapper.csproj", "{FA36CBC4-702A-4E7C-9288-88284CB0A23F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistroDL", "..\DistroDL\DistroDL.csproj", "{116F209C-DC11-43A8-8248-5F6A7E4B5CF3}"
 EndProject
