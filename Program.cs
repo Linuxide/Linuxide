@@ -22,9 +22,4 @@ namespace Linuxide
             Application.Run(new MainWindow());
         }
     }
-
-    public class Methods
-    {
-
-    }
 }
