@@ -60,7 +60,8 @@
     <StartupObject>Linuxide.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon_rounded.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>FD06B638F9A1481D207218632D489515C304A62D</ManifestCertificateThumbprint>
@@ -238,7 +239,6 @@
     </PublishFile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon_rounded.ico" />
     <Content Include="Resources\icon_orginal.png" />
     <Content Include="Resources\icon_rounded.ico" />
     <Content Include="Resources\icon_rounded.png" />
