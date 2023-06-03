@@ -25,7 +25,7 @@ namespace Linuxide
 
             button3.Enabled = false;
             welcome.TopLevel = false;
-            panel1.Controls.Add(welcome);
+            displayPanel.Controls.Add(welcome);
             welcome.Show();
             return;
         }
@@ -56,7 +56,7 @@ namespace Linuxide
             // let's hope it won't get past 9 :)
             if (totalPageNum == currentPageNum)
             {
-                currentPageNum = 0; //causing amnesia to the counter
+                currentPageNum = 0; // causing amnesia to the counter
             }
 
             if (currentPageNum == 9)
@@ -74,18 +74,18 @@ namespace Linuxide
 
             if (currentPageNum == 1) //ill-fat code. too lazy for switches
             {
-                panel1.Controls.Remove(welcome);
+                displayPanel.Controls.Remove(welcome);
                 preperation.TopLevel = false;
-                panel1.Controls.Add(preperation);
+                displayPanel.Controls.Add(preperation);
                 preperation.Show();
                 return;
             }
             if (currentPageNum == 2) //ill-fat code. too lazy for switches
             {
                 button3.Enabled = false;
-                panel1.Controls.Remove(preperation);
+                displayPanel.Controls.Remove(preperation);
                 partitionManager.TopLevel = false;
-                panel1.Controls.Add(partitionManager);
+                displayPanel.Controls.Add(partitionManager);
                 partitionManager.Show();
                 return;
             }
@@ -113,18 +113,18 @@ namespace Linuxide
 
             if (currentPageNum == 0) // ill-fat like my body
             {
-                panel1.Controls.Remove(preperation);
+                displayPanel.Controls.Remove(preperation);
                 welcome.TopLevel = false;
-                panel1.Controls.Add(welcome);
+                displayPanel.Controls.Add(welcome);
                 welcome.Show();
                 return;
             }
             if (currentPageNum == 1) //ill-fat code. too lazy for switches
             {
                 button3.Enabled = true;
-                panel1.Controls.Remove(partitionManager);
+                displayPanel.Controls.Remove(partitionManager);
                 partitionManager.TopLevel = false;
-                panel1.Controls.Add(preperation);
+                displayPanel.Controls.Add(preperation);
                 preperation.Show();
                 return;
             }

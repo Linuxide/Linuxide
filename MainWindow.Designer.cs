@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.displayPanel = new System.Windows.Forms.Panel();
             this.LinuxideNotifier = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
@@ -56,13 +56,14 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel1
+            // displayPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(7, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(618, 402);
-            this.panel1.TabIndex = 4;
+            this.displayPanel.BackColor = System.Drawing.Color.Transparent;
+            this.displayPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.displayPanel.Location = new System.Drawing.Point(7, 12);
+            this.displayPanel.Name = "displayPanel";
+            this.displayPanel.Size = new System.Drawing.Size(618, 402);
+            this.displayPanel.TabIndex = 4;
             // 
             // LinuxideNotifier
             // 
@@ -77,7 +78,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img1;
             this.ClientSize = new System.Drawing.Size(637, 474);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -93,7 +94,7 @@
 
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel displayPanel;
         private System.Windows.Forms.NotifyIcon LinuxideNotifier;
     }
 }
