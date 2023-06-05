@@ -34,6 +34,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.displayPanel = new System.Windows.Forms.Panel();
             this.LinuxideNotifier = new System.Windows.Forms.NotifyIcon(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -71,6 +72,15 @@
             this.LinuxideNotifier.Text = "Linuxide - Dummy Text";
             this.LinuxideNotifier.Visible = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 441);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "That\'s a placeholder! Do not remove it";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -78,6 +88,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img1;
             this.ClientSize = new System.Drawing.Size(637, 474);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.displayPanel);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -85,8 +96,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.Text = "Linuxide";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +107,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel displayPanel;
         private System.Windows.Forms.NotifyIcon LinuxideNotifier;
+        private System.Windows.Forms.Label label1;
     }
 }
 

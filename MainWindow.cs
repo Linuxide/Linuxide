@@ -43,7 +43,7 @@ namespace Linuxide
         public void button1_Click(object sender, EventArgs e)
         {
             currentPageNum++;
-            int totalPageNum = 9 % currentPageNum;
+            int totalPageNum = 9 % currentPageNum; // maths. Thanks bg16 for his help here!
 
 
             if (currentPageNum > 0)
@@ -89,6 +89,18 @@ namespace Linuxide
                 partitionManager.Show();
                 return;
             }
+            if (currentPageNum == 3) //ill-fat code. too lazy for switches
+            {
+                if (displayPanel.Controls.Equals(preperation)) // not working :(
+                {
+                    MessageBox.Show("Hello World!");
+                }
+                displayPanel.Controls.Remove(preperation);
+                partitionManager.TopLevel = false;
+                displayPanel.Controls.Add(partitionManager);
+                partitionManager.Show();
+                return;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -128,11 +140,6 @@ namespace Linuxide
                 preperation.Show();
                 return;
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
