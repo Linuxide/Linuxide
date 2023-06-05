@@ -43,7 +43,7 @@ namespace Linuxide
         public void button1_Click(object sender, EventArgs e)
         {
             currentPageNum++;
-            int totalPageNum = 9 % currentPageNum; // maths. Thanks bg16 for his help here!
+            int totalPageNum = 9 % currentPageNum; // thanks bg16 for the maths
 
 
             if (currentPageNum > 0)
@@ -91,14 +91,20 @@ namespace Linuxide
             }
             if (currentPageNum == 3) //ill-fat code. too lazy for switches
             {
-                if (displayPanel.Controls.Equals(preperation)) // not working :(
+                if (displayPanel.Contains(partitionManager)) // it finally works!
                 {
-                    MessageBox.Show("Hello World!");
+                    if (MessageBox.Show("Are you sure to deploy the installation files to this partition? ANY DATA THAT WERE SAVED TO THIS PARTITION ARE GOING TO BE DELETED! \nContinue with your selection??", "Hey", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        displayPanel.Controls.Remove(partitionManager);
+                        // [...]
+                    }
+                    else
+                    {
+                        currentPageNum--;
+                    }
                 }
-                displayPanel.Controls.Remove(preperation);
-                partitionManager.TopLevel = false;
-                displayPanel.Controls.Add(partitionManager);
-                partitionManager.Show();
+                
+                // [...]
                 return;
             }
         }
@@ -140,6 +146,11 @@ namespace Linuxide
                 preperation.Show();
                 return;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
