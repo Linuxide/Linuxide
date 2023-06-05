@@ -33,7 +33,6 @@
             this.Partition_listBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +45,7 @@
             // 
             // Partition_listBox
             // 
-            this.Partition_listBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Partition_listBox.BackColor = System.Drawing.SystemColors.Control;
             this.Partition_listBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Partition_listBox.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Partition_listBox.FormattingEnabled = true;
@@ -69,19 +68,11 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Name = "label3";
-            // 
             // PartitionManager
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img1;
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Partition_listBox);
@@ -101,6 +92,5 @@
         private System.Windows.Forms.ListBox Partition_listBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
     }
 }
