@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PartitionManager));
             this.label1 = new System.Windows.Forms.Label();
             this.Partition_listBox = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.warning_txt = new System.Windows.Forms.Label();
+            this.warning_icon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_icon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,34 +53,34 @@
             this.Partition_listBox.Name = "Partition_listBox";
             this.Partition_listBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // label2
+            // warning_txt
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.warning_txt, "warning_txt");
+            this.warning_txt.BackColor = System.Drawing.Color.Transparent;
+            this.warning_txt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.warning_txt.Name = "warning_txt";
             // 
-            // pictureBox1
+            // warning_icon
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Linuxide.Properties.Resources.warningIcon;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.warning_icon.BackColor = System.Drawing.Color.Transparent;
+            this.warning_icon.Image = global::Linuxide.Properties.Resources.warningIcon;
+            resources.ApplyResources(this.warning_icon, "warning_icon");
+            this.warning_icon.Name = "warning_icon";
+            this.warning_icon.TabStop = false;
             // 
             // PartitionManager
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Linuxide.Properties.Resources.bg_img1;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.warning_icon);
+            this.Controls.Add(this.warning_txt);
             this.Controls.Add(this.Partition_listBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PartitionManager";
             this.Load += new System.EventHandler(this.PartitionManager_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warning_icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,7 +90,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox Partition_listBox;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label warning_txt;
+        private System.Windows.Forms.PictureBox warning_icon;
     }
 }

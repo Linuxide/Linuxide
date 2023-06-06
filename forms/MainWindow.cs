@@ -1,8 +1,6 @@
 ﻿/*
  Linuxide AKA "A tool that helps you to be vegan easily"
- 
  */
-
 
 using System;
 using System.Windows.Forms;
@@ -13,8 +11,6 @@ namespace Linuxide
     public partial class MainWindow : Form
     {
         public int currentPageNum;
-
-        // I was fighting with those shit for a whole day (thankfully i discovered what debuggers are)
         Welcome welcome = new Welcome();
         Preperation preperation = new Preperation();
         PartitionManager partitionManager = new PartitionManager();
@@ -36,27 +32,24 @@ namespace Linuxide
         }
         private void cancel_Btn_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // exits DUH
+            Application.Exit();
             return;
         }
 
         public void button1_Click(object sender, EventArgs e)
         {
             currentPageNum++;
-            int totalPageNum = 9 % currentPageNum; // thanks bg16 for the maths
+            int totalPageNum = 9 % currentPageNum;
 
 
             if (currentPageNum > 0)
             { //if the current page is greater than 0, enable the back button
                 button3.Enabled = true;
-                //label1.Text = currentPageNum.ToString() " " + totalPageNum.ToString() + " left"; <= For debugging the prev/next buttons
-                //return; //<= returning things isn't always good
             }
 
-            // let's hope it won't get past 9 :)
             if (totalPageNum == currentPageNum)
             {
-                currentPageNum = 0; // causing amnesia to the counter
+                currentPageNum = 0;
             }
 
             if (currentPageNum == 9)
@@ -69,10 +62,10 @@ namespace Linuxide
             { // if it is the last page, close the app
                 button1.Enabled = false; // who the fuck wants next->finish->next here? An endless next/finish?
                 Application.Exit();
-                return; //debugger == hungry
+                return;
             }
 
-            if (currentPageNum == 1) //ill-fat code. too lazy for switches
+            if (currentPageNum == 1)
             {
                 displayPanel.Controls.Remove(welcome);
                 preperation.TopLevel = false;
@@ -80,7 +73,7 @@ namespace Linuxide
                 preperation.Show();
                 return;
             }
-            if (currentPageNum == 2) //ill-fat code. too lazy for switches
+            if (currentPageNum == 2)
             {
                 button3.Enabled = false;
                 displayPanel.Controls.Remove(preperation);
@@ -89,22 +82,19 @@ namespace Linuxide
                 partitionManager.Show();
                 return;
             }
-            if (currentPageNum == 3) //ill-fat code. too lazy for switches
+            if (currentPageNum == 3)
             {
-                if (displayPanel.Contains(partitionManager)) // it finally works!
+                if (displayPanel.Contains(partitionManager)) 
                 {
                     if (MessageBox.Show("Are you sure to deploy the installation files to this partition? ANY DATA THAT WERE SAVED TO THIS PARTITION ARE GOING TO BE DELETED! \nContinue with your selection??", "Hey", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         displayPanel.Controls.Remove(partitionManager);
-                        // [...]
                     }
                     else
                     {
                         currentPageNum--;
                     }
                 }
-                
-                // [...]
                 return;
             }
         }
@@ -114,22 +104,21 @@ namespace Linuxide
             if (currentPageNum > 0)
             {
                 currentPageNum--;
-                button3.Enabled = true; //previous-zero hawaii
+                button3.Enabled = true;
             }
-
 
             if (currentPageNum < 0)
             {
-                currentPageNum += 1; // i mean, a rock can understand tf i typed here?
+                currentPageNum += 1;
             }
 
             if (currentPageNum <= 0)
             {
 
-                button3.Enabled = false; // still curious? oh god
+                button3.Enabled = false;
             }
 
-            if (currentPageNum == 0) // ill-fat like my body
+            if (currentPageNum == 0)
             {
                 displayPanel.Controls.Remove(preperation);
                 welcome.TopLevel = false;
@@ -137,7 +126,7 @@ namespace Linuxide
                 welcome.Show();
                 return;
             }
-            if (currentPageNum == 1) //ill-fat code. too lazy for switches
+            if (currentPageNum == 1)
             {
                 button3.Enabled = true;
                 displayPanel.Controls.Remove(partitionManager);

@@ -57,14 +57,13 @@ namespace Linuxide
 
         private void Preperation_Load(object sender, EventArgs e)
         {
+            progressBar1.Visible = false;
             return;
         }
 
-        // this disk manager using the windows api contained blood and tears
         public List<String> partitionList = new List<String>();
         public List<String> diskList = new List<String>();
 
-        //public List<Int16> partitionList = new List<Int16>();
         public int selectedValue = 0;
         public int partcount = 0;
         public string[] Fullpart = new string[256];
@@ -72,12 +71,7 @@ namespace Linuxide
         public string[] diskNums = new string[256];
         public void button2_Click(object sender, EventArgs e)
         {
-            /* broken 
-             
-            i am lazy af, i need to read some biology as i have fucking exams, so i will do something stupid but hence it will work, who tf cares?
-             */
 
-
-         }
+        }
     }
 }
