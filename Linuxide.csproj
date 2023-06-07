@@ -191,7 +191,6 @@
     </PublishFile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\nextIcon.png" />
     <None Include="Resources\donateIcon.png" />
     <Content Include="Resources\icon_orginal.png" />
     <Content Include="Resources\icon_rounded.ico" />
