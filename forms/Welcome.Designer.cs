@@ -50,10 +50,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Linuxide.Properties.Resources.icon_rounded1;
+            this.pictureBox1.Image = global::Linuxide.Properties.Resources.icon_orginal;
             this.pictureBox1.Location = new System.Drawing.Point(13, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(67, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
+using System.IO;
 using System.Management;
 using System.Windows.Forms;
 using DiskPartWrapper;
@@ -9,13 +11,15 @@ namespace Linuxide
     public partial class Preperation : Form
     {
         public string fileName = string.Empty;
-
+        public MemoryStream stream;
+        
         public MainWindow parentForm;
         public Preperation()
         {
             InitializeComponent();
             button1.Enabled = false;
             domainUpDown1.Enabled = false;
+            
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
@@ -61,16 +65,20 @@ namespace Linuxide
             return;
         }
 
-        public List<String> partitionList = new List<String>();
-        public List<String> diskList = new List<String>();
 
-        public int selectedValue = 0;
-        public int partcount = 0;
-        public string[] Fullpart = new string[256];
-        public string[] partNums = new string[256];
-        public string[] diskNums = new string[256];
         public void button2_Click(object sender, EventArgs e)
         {
+
+            using (StreamWriter memWriter = new StreamWriter(stream)){ // Not working :(
+                stream.Position = 0;
+                if (stream.Position < 16)
+                {
+                    stream.Position = 16;
+                }
+                memWriter.Write("dlStarted");
+                memWriter.Flush();
+                memWriter.Close();
+            }
 
         }
     }

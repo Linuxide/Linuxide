@@ -141,5 +141,11 @@ namespace Linuxide
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ko-fi.com/chocolateadventurouz");
+            return;
+        }
     }
 }
