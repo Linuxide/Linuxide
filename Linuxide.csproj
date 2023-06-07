@@ -96,6 +96,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\Checkup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Checkup.Designer.cs">
+      <DependentUpon>Checkup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\DistroDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\DistroDL.Designer.cs">
+      <DependentUpon>DistroDL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Managers\CoreManager.cs" />
     <Compile Include="forms\MainWindow.cs">
       <SubType>Form</SubType>
@@ -128,6 +140,12 @@
     <Compile Include="forms\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="forms\Checkup.resx">
+      <DependentUpon>Checkup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DistroDL.resx">
+      <DependentUpon>DistroDL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
