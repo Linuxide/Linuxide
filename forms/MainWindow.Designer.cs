@@ -124,11 +124,11 @@
         #endregion
 
         public System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel displayPanel;
-        private System.Windows.Forms.NotifyIcon LinuxideNotifier;
+        public System.Windows.Forms.NotifyIcon LinuxideNotifier;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label1;
     }
 }
 

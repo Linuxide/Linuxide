@@ -41,7 +41,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(83, 39);
+            this.label1.Location = new System.Drawing.Point(83, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 37);
             this.label1.TabIndex = 1;
